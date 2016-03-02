@@ -7,18 +7,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/angular/angular2-seed.git"
+    "url": "git+https://github.com/sebdm/angular2-seed.git"
   },
   "keywords": [
-    "Angular2",
-    "angular2-seed"
+
   ],
-  "author": "Rob Wormald <robwormald@gmail.com>",
+  "author": "Sebastian Lind <sebastian.lind@gmail.com>",
   "license": "Apache-2.0",
-  "bugs": {
-    "url": "https://github.com/angular/angular2-seed/issues"
-  },
-  "homepage": "https://github.com/angular/angular2-seed#readme",
   "devDependencies": {
     "css-loader": "^0.23.1",
     "html-loader": "^0.4.3",
