@@ -1,2 +1,63 @@
-<h3>Home Component</h3>
-<p>Welcome to Angular Seed</p>
+<!--<div class="card">-->
+<!--<div class="card-divider">-->
+<!--This is a header-->
+<!--</div>-->
+<!--<div class="card-section">-->
+<!--<p>The most basic elements in the Foundation for Apps grid are the Group and Block.</p>-->
+<!--</div>-->
+<!--</div>-->
+<form name="drive-form">
+  <div class="grid-block wrap">
+    <!--<div class="grid-content small-12 medium-6">-->
+      <!--<label>-->
+        <!--Home page-->
+            <!--<span class="inline-label">-->
+              <!--<span class="form-label">www.</span>-->
+              <!--<input type="text">-->
+              <!--<span class="form-label">.com</span>-->
+            <!--</span>-->
+      <!--</label>-->
+    <!--</div>-->
+    <div class="grid-content small-12 medium-6">
+      <label>
+        Text
+        <input type="text" [(ngModel)]="model.text" placeholder="Text" required>
+      </label>
+    </div>
+    <div class="grid-content small-12 medium-6">
+      <label>
+        Number
+        <input type="number" placeholder="Number">
+      </label>
+    </div>
+    <div class="grid-content small-12 medium-6">
+      <label>
+        Search
+            <span class="inline-label">
+            <input type="search" placeholder="Search">
+            <a href="#" class="button info">Search</a>
+            </span>
+      </label>
+    </div>
+    <!--<div class="grid-content small-12 medium-6">-->
+      <!--<label>-->
+        <!--Range-->
+        <!--<input type="range">-->
+      <!--</label>-->
+    <!--</div>-->
+    <div class="grid-content small-12 medium-6">
+      <label>Typ</label>
+      <select required [(ngModel)]="model.driveType">
+        <option *ngFor="#driveType of driveTypes" [value]="driveType">{{driveType}}</option>
+      </select>
+    </div>
+    <div class="grid-content small-12 medium-6">
+      <label for="check-1">Check me</label>
+      <input type="checkbox" id="check-1">
+    </div>
+    <div class="grid-content small-12 space-top">
+      <input type="submit" class="expand button primary" value="Spara">
+    </div>
+  </div>
+</form>
+<pre>{{ model | json }}</pre>

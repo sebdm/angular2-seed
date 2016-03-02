@@ -1,0 +1,31 @@
+<div class="grid-frame vertical">
+  <div class="title-bar">
+    <a class="center title" [routerLink]="['/Home']">
+      <!--<button class="menu-icon" type="button"></button>-->
+      Unter
+    </a>
+    <!--<span class="left">-->
+    <!--<span class="success label">Månad: 40 000</span>-->
+    <!--<span class="success label">Idag: 4350</span>-->
+    <!--</span>-->
+    <span class="right">
+      <span class="label dark">Sebastian Lind</span>
+    </span>
+  </div>
+  <div>
+    <ul class="menu-bar small-vertical medium-horizontal custom">
+      <li router-active>
+        <a [routerLink]="['/Home']">Rapportera</a>
+      </li>
+      <li router-active>
+        <a [routerLink]="['/About']">Statistik</a>
+      </li>
+      <!--<li>-->
+      <!--<a [routerLink]="['/RepoBrowser/RepoList', {org: 'angular'}]">Repos</a>-->
+      <!--</li>-->
+    </ul>
+  </div>
+  <div class="space-top">
+    <router-outlet></router-outlet>
+  </div>
+</div>

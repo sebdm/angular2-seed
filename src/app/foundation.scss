@@ -1,0 +1,50 @@
+$titlebar-background: #e2b336 !default;
+$titlebar-color: #000 !default;
+
+@import '~foundation-apps/scss/foundation.scss';
+
+.space-top {
+  margin-top: 1em;
+}
+
+.button {
+  &.primary {
+    font-weight: bold;
+  }
+}
+
+.title-bar {
+  a {
+    color: #000;
+  }
+}
+
+.menu-bar {
+  font-weight: bold;
+  $col: lighten($dark-color, 20%);
+  &.custom {
+    @include menu-bar-style($dark-color,
+    $background-hover: $dark-color,
+    $background-active: $col,
+    $color: #fff,
+    $color-hover: #fff,
+    $color-active: #fff,
+    $autocolor: false);
+
+    li.is-active:hover {
+      a {
+        background-color: $col;
+      }
+    }
+  }
+}
+
+input.ng-touched, select.ng-touched {
+  &.ng-invalid, &.ng-invalid:hover, &.ng-invalid:focus {
+    background-color: lighten(#ff0000, 45%);
+  }
+
+  &.ng-valid, &.ng-valid:hover, &.ng-valid:focus {
+    background-color: lighten($success-color, 45%);
+  }
+}
